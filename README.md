@@ -6,6 +6,7 @@
 
 
 - avoir docker !
+- pas besoin de mangoDB
 dans racine du projet !
 ```bash
 npm install
