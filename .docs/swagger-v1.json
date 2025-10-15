@@ -1,0 +1,7 @@
+{
+"openapi": "3.0.3",
+"info": { "title": "API v1 (deprecated)", "version": "1.0.0", "description": "Version héritée du TP1 (lecture seule)." },
+"paths": {
+"/api/v1": { "get": { "deprecated": true, "summary": "Endpoints v1 (hérités)" } }
+}
+}

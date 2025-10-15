@@ -1,0 +1,26 @@
+{
+"openapi": "3.0.3",
+"info": { "title": "API v2 – Media Tracker", "version": "2.0.0" },
+"servers": [ { "url": "/" } ],
+"components": {
+"securitySchemes": { "bearerAuth": { "type": "http", "scheme": "bearer", "bearerFormat": "JWT" } },
+"schemas": {
+"User": { "type": "object", "properties": { "_id": {"type":"string"}, "email": {"type":"string"}, "username": {"type":"string"}, "role": {"type":"string"} } },
+"Movie": { "type": "object", "properties": { "_id": {"type":"string"}, "title": {"type":"string"}, "genres": {"type":"array","items":{"type":"string"}}, "durationMin": {"type":"number"} } }
+}
+},
+"paths": {
+"/api/v2/auth/register": { "post": { "summary": "Register", "requestBody": {"required": true}, "responses": {"201": {"description": "Created"}, "409": {"description": "Email exists"}} } },
+"/api/v2/auth/login": { "post": { "summary": "Login", "responses": {"200": {"description": "JWT"}, "401": {"description": "Bad creds"}} } },
+"/api/v2/users/me": { "get": { "security":[{"bearerAuth":[]}], "responses": {"200": {"description": "Me"}, "401": {"description": "Unauthorized"}} } },
+"/api/v2/movies": { "get": { "summary": "List movies" }, "post": { "security":[{"bearerAuth":[]}], "summary":"Create (admin)" } },
+"/api/v2/movies/{id}": { "get": { "summary": "Get" }, "patch": { "security":[{"bearerAuth":[]} ] }, "delete": { "security":[{"bearerAuth":[]} ] } },
+"/api/v2/series": { "get": {"summary": "List series"}, "post": {"security":[{"bearerAuth":[]}]} },
+"/api/v2/series/{seriesId}/seasons": { "post": {"security":[{"bearerAuth":[]}] } },
+"/api/v2/series/{seriesId}/seasons/{seasonId}/episodes": { "post": {"security":[{"bearerAuth":[]}] } },
+"/api/v2/series/{seriesId}/seasons/{seasonId}/episodes": { "get": { "summary": "List episodes" } },
+"/api/v2/ratings": { "post": { "security":[{"bearerAuth":[]}], "summary": "Create rating" } },
+"/api/v2/ratings/avg/movie/{movieId}": { "get": { "summary": "Avg movie" } },
+"/api/v2/ratings/avg/series/{seriesId}": { "get": { "summary": "Avg series" } }
+}
+}
