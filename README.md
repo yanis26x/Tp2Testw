@@ -1,10 +1,4 @@
 # VERSION TEST — NE PAS DONNER À LA PROF
-# Soon—soon as I pull my dick out, I bet she neck me
-# Yes—yes, love the way she please me, but she deceive me
-# Guap gives me satisfaction, it just completes me
-# Money—money, I keep it 'round me, I'm very clingy
-# Do—dope sick, I'm having withdrawals, I feel uneasy
-# Bank—bankrolls, my funds increasing, yours looking chibi
 - V1 PAS FAITE
 
 ## comment run : 
@@ -28,5 +22,11 @@ npm run dev
 Va Sur : http://localhost:2626/docs/v2
 
 # HMU IF U NEED MY HELP !
+# Soon—soon as I pull my dick out, I bet she neck me
+# Yes—yes, love the way she please me, but she deceive me
+# Guap gives me satisfaction, it just completes me
+# Money—money, I keep it 'round me, I'm very clingy
+# Do—dope sick, I'm having withdrawals, I feel uneasy
+# Bank—bankrolls, my funds increasing, yours looking chibi
  
 
