@@ -26,3 +26,4 @@ npm run dev
 Va Sur : http://localhost:2626/docs/v2
 
 # HMU IF U NEED MY HELP ! 
+I just popped an E pill, yеah, just to keep me goin' (90mg) 
