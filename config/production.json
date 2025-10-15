@@ -1,0 +1,10 @@
+{
+"server": {
+"http": { "enabled": true, "port": 8080 },
+"https": { "enabled": false, "port": 8443, "redirectAllHttpToHttps": true },
+"trustProxy": true
+},
+"security": {
+"rateLimit": { "windowMs": 900000, "max": 200 }
+}
+}
